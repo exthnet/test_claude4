@@ -1,0 +1,41 @@
+===== Job started 2026年  5月 26日 火曜日 09:22:31 JST =====
+hostname: a0071
+CPU: model name	: Intel(R) Xeon(R) Platinum 8490H
+CPU MHz: cpu MHz		: 1900.000
+AMX flags: amx_bf16 amx_int8 amx_tile 
+=== Correctness verification ===
+---- all 256 256 256 iters=2 warmups=1 verify=1 ----
+METHOD=naive   M=  256 N=  256 K=  256  iters=2  t_avg=0.0140s  t_min=0.0138s  GFLOPS(avg)=2.39  GFLOPS(best)=2.42  rel_err=0.000e+00
+METHOD=avx512  M=  256 N=  256 K=  256  iters=2  t_avg=0.0005s  t_min=0.0005s  GFLOPS(avg)=72.93  GFLOPS(best)=73.36  rel_err=6.130e-08
+METHOD=amx     M=  256 N=  256 K=  256  iters=2  t_avg=0.0001s  t_min=0.0001s  GFLOPS(avg)=590.60  GFLOPS(best)=608.71  rel_err=1.025e-07
+METHOD=mkl     M=  256 N=  256 K=  256  iters=2  t_avg=0.0001s  t_min=0.0000s  GFLOPS(avg)=659.25  GFLOPS(best)=763.31  rel_err=1.025e-07
+=== Larger size correctness (skip naive) ===
+---- avx512 1024 1024 1024 iters=3 warmups=1 verify=1 ----
+METHOD=avx512  M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0288s  t_min=0.0288s  GFLOPS(avg)=74.50  GFLOPS(best)=74.54  rel_err=1.597e-07
+---- amx 1024 1024 1024 iters=3 warmups=1 verify=1 ----
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0028s  t_min=0.0027s  GFLOPS(avg)=778.47  GFLOPS(best)=795.86  rel_err=2.344e-07
+---- mkl 1024 1024 1024 iters=3 warmups=1 verify=1 ----
+METHOD=mkl     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0024s  t_min=0.0024s  GFLOPS(avg)=900.56  GFLOPS(best)=902.46  rel_err=2.344e-07
+=== Main benchmark @ 10000 ===
+---- avx512 10000 10000 10000 iters=5 warmups=2 verify=0 ----
+METHOD=avx512  M=10000 N=10000 K=10000  iters=5  t_avg=27.8698s  t_min=27.8686s  GFLOPS(avg)=71.76  GFLOPS(best)=71.77
+---- amx 10000 10000 10000 iters=5 warmups=2 verify=0 ----
+METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.1814s  t_min=3.1743s  GFLOPS(avg)=628.66  GFLOPS(best)=630.05
+---- mkl 10000 10000 10000 iters=5 warmups=2 verify=0 ----
+METHOD=mkl     M=10000 N=10000 K=10000  iters=5  t_avg=2.0266s  t_min=2.0262s  GFLOPS(avg)=986.89  GFLOPS(best)=987.08
+=== AMX size scan ===
+---- amx 512 512 512 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M=  512 N=  512 K=  512  iters=3  t_avg=0.0004s  t_min=0.0003s  GFLOPS(avg)=754.32  GFLOPS(best)=780.73
+---- amx 1024 1024 1024 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0028s  t_min=0.0027s  GFLOPS(avg)=771.26  GFLOPS(best)=792.77
+---- amx 2048 2048 2048 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M= 2048 N= 2048 K= 2048  iters=3  t_avg=0.0225s  t_min=0.0223s  GFLOPS(avg)=763.89  GFLOPS(best)=770.71
+---- amx 4096 4096 4096 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M= 4096 N= 4096 K= 4096  iters=3  t_avg=0.2760s  t_min=0.2757s  GFLOPS(avg)=497.88  GFLOPS(best)=498.42
+---- amx 6144 6144 6144 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M= 6144 N= 6144 K= 6144  iters=3  t_avg=0.8246s  t_min=0.8241s  GFLOPS(avg)=562.53  GFLOPS(best)=562.85
+---- amx 8192 8192 8192 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M= 8192 N= 8192 K= 8192  iters=3  t_avg=3.4895s  t_min=3.4874s  GFLOPS(avg)=315.09  GFLOPS(best)=315.28
+---- amx 10000 10000 10000 iters=3 warmups=1 verify=0 ----
+METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1597s  t_min=3.1584s  GFLOPS(avg)=632.98  GFLOPS(best)=633.23
+=== Job ended 2026年  5月 26日 火曜日 09:27:05 JST ===

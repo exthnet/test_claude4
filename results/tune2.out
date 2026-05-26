@@ -1,0 +1,26 @@
+===== Tuning v2 2026年  5月 26日 火曜日 09:32:43 JST =====
+host: a0102
+--- Verify correctness ---
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0032s  t_min=0.0032s  GFLOPS(avg)=671.83  GFLOPS(best)=678.45  rel_err=2.344e-07
+--- PFD scan at MC=128 NC=1024 KC=10016 ---
+PFD=0 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.6759s  t_min=4.6755s  GFLOPS(avg)=427.72  GFLOPS(best)=427.77
+PFD=2 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.6549s  t_min=4.6453s  GFLOPS(avg)=429.65  GFLOPS(best)=430.54
+PFD=4 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.7192s  t_min=4.7133s  GFLOPS(avg)=423.80  GFLOPS(best)=424.33
+PFD=6 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.7033s  t_min=4.6995s  GFLOPS(avg)=425.23  GFLOPS(best)=425.58
+PFD=8 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.6712s  t_min=4.6700s  GFLOPS(avg)=428.15  GFLOPS(best)=428.27
+PFD=12 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.7883s  t_min=4.7878s  GFLOPS(avg)=417.68  GFLOPS(best)=417.72
+--- KC scan at MC=128 NC=1024 PFD=4 ---
+KC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.0170s  t_min=4.0148s  GFLOPS(avg)=497.88  GFLOPS(best)=498.15
+KC=512 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.5747s  t_min=3.5726s  GFLOPS(avg)=559.49  GFLOPS(best)=559.81
+KC=1024 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.0753s  t_min=4.0739s  GFLOPS(avg)=490.76  GFLOPS(best)=490.93
+KC=2048 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.3715s  t_min=4.3622s  GFLOPS(avg)=457.50  GFLOPS(best)=458.48
+KC=5120 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.0250s  t_min=4.0233s  GFLOPS(avg)=496.89  GFLOPS(best)=497.11
+KC=10016 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.7440s  t_min=4.7419s  GFLOPS(avg)=421.59  GFLOPS(best)=421.77
+--- MC scan at KC=10016 NC=1024 PFD=4 ---
+MC=32 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.8536s  t_min=3.8468s  GFLOPS(avg)=518.99  GFLOPS(best)=519.92
+MC=64 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.8828s  t_min=3.8800s  GFLOPS(avg)=515.09  GFLOPS(best)=515.47
+MC=96 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.4734s  t_min=4.4516s  GFLOPS(avg)=447.09  GFLOPS(best)=449.28
+MC=128 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=4.7372s  t_min=4.7342s  GFLOPS(avg)=422.19  GFLOPS(best)=422.46
+MC=192 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=5.0299s  t_min=5.0288s  GFLOPS(avg)=397.62  GFLOPS(best)=397.71
+MC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=5.0915s  t_min=5.0906s  GFLOPS(avg)=392.81  GFLOPS(best)=392.88
+MC=384 : 

@@ -1,0 +1,24 @@
+===== V2 (A pack hoisted) 2026年  5月 26日 火曜日 10:08:36 JST =====
+host: a0197
+--- Correctness ---
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0024s  t_min=0.0023s  GFLOPS(avg)=906.20  GFLOPS(best)=919.92  rel_err=2.344e-07
+--- KC scan @ MC=32 NC=512 PFD=0 ---
+KC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.9567s  t_min=2.9491s  GFLOPS(avg)=676.42  GFLOPS(best)=678.18
+KC=384 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.4631s  t_min=2.4623s  GFLOPS(avg)=811.98  GFLOPS(best)=812.24
+KC=512 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.2248s  t_min=2.2245s  GFLOPS(avg)=898.97  GFLOPS(best)=899.09
+KC=640 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.0711s  t_min=2.0703s  GFLOPS(avg)=965.67  GFLOPS(best)=966.04
+KC=768 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.0245s  t_min=2.0234s  GFLOPS(avg)=987.88  GFLOPS(best)=988.43
+KC=1024 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=1.9699s  t_min=1.9658s  GFLOPS(avg)=1015.30  GFLOPS(best)=1017.40
+KC=1280 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.0350s  t_min=2.0325s  GFLOPS(avg)=982.79  GFLOPS(best)=984.00
+KC=1536 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.0706s  t_min=2.0691s  GFLOPS(avg)=965.91  GFLOPS(best)=966.60
+KC=2048 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.0425s  t_min=3.0407s  GFLOPS(avg)=657.35  GFLOPS(best)=657.74
+--- KC scan @ MC=32 NC=1024 PFD=0 ---
+KC=512 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.1225s  t_min=2.1200s  GFLOPS(avg)=942.27  GFLOPS(best)=943.38
+KC=768 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.0409s  t_min=2.0360s  GFLOPS(avg)=979.96  GFLOPS(best)=982.30
+KC=1024 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=2.8961s  t_min=2.8943s  GFLOPS(avg)=690.59  GFLOPS(best)=691.02
+KC=1280 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.6376s  t_min=3.6356s  GFLOPS(avg)=549.82  GFLOPS(best)=550.11
+KC=1536 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.7066s  t_min=3.7053s  GFLOPS(avg)=539.58  GFLOPS(best)=539.77
+KC=2048 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.9166s  t_min=3.9157s  GFLOPS(avg)=510.65  GFLOPS(best)=510.77
+--- MC scan @ NC=1024 KC=1024 PFD=0 ---
+MC=32 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=2.8998s  t_min=2.8959s  GFLOPS(avg)=689.69  GFLOPS(best)=690.64
+MC=64 : 

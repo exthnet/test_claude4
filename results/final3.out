@@ -1,0 +1,29 @@
+===== Final3 2026年  5月 26日 火曜日 10:14:24 JST =====
+host: a0197
+CPU MHz: cpu MHz		: 1900.000
+--- Correctness @ 1024 ---
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0022s  t_min=0.0021s  GFLOPS(avg)=977.28  GFLOPS(best)=1002.33  rel_err=2.344e-07
+--- Best AMX @ 10000 (MC=32 NC=512 KC=1024) ---
+Run 1: METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=1.9667s  t_min=1.9658s  GFLOPS(avg)=1016.94  GFLOPS(best)=1017.38
+Run 2: METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=1.9695s  t_min=1.9683s  GFLOPS(avg)=1015.51  GFLOPS(best)=1016.11
+Run 3: METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=1.9635s  t_min=1.9614s  GFLOPS(avg)=1018.59  GFLOPS(best)=1019.66
+--- MKL @ 10000 ---
+Run 1: METHOD=mkl     M=10000 N=10000 K=10000  iters=5  t_avg=1.8676s  t_min=1.8664s  GFLOPS(avg)=1070.92  GFLOPS(best)=1071.58
+Run 2: METHOD=mkl     M=10000 N=10000 K=10000  iters=5  t_avg=1.8737s  t_min=1.8683s  GFLOPS(avg)=1067.38  GFLOPS(best)=1070.50
+Run 3: METHOD=mkl     M=10000 N=10000 K=10000  iters=5  t_avg=1.8687s  t_min=1.8680s  GFLOPS(avg)=1070.28  GFLOPS(best)=1070.64
+--- Size scan AMX (best params) vs MKL ---
+AMX sz=512 : METHOD=amx     M=  512 N=  512 K=  512  iters=3  t_avg=0.0003s  t_min=0.0003s  GFLOPS(avg)=912.05  GFLOPS(best)=926.65
+MKL sz=512 : METHOD=mkl     M=  512 N=  512 K=  512  iters=3  t_avg=0.0004s  t_min=0.0004s  GFLOPS(avg)=731.24  GFLOPS(best)=746.30
+AMX sz=1024 : METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0022s  t_min=0.0021s  GFLOPS(avg)=978.17  GFLOPS(best)=1002.66
+MKL sz=1024 : METHOD=mkl     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0024s  t_min=0.0024s  GFLOPS(avg)=909.85  GFLOPS(best)=913.15
+AMX sz=2048 : METHOD=amx     M= 2048 N= 2048 K= 2048  iters=3  t_avg=0.0164s  t_min=0.0163s  GFLOPS(avg)=1050.20  GFLOPS(best)=1055.60
+MKL sz=2048 : METHOD=mkl     M= 2048 N= 2048 K= 2048  iters=3  t_avg=0.0190s  t_min=0.0187s  GFLOPS(avg)=906.42  GFLOPS(best)=916.76
+AMX sz=4096 : METHOD=amx     M= 4096 N= 4096 K= 4096  iters=3  t_avg=0.1418s  t_min=0.1417s  GFLOPS(avg)=969.36  GFLOPS(best)=970.05
+MKL sz=4096 : METHOD=mkl     M= 4096 N= 4096 K= 4096  iters=3  t_avg=0.1607s  t_min=0.1605s  GFLOPS(avg)=855.06  GFLOPS(best)=856.33
+AMX sz=6144 : METHOD=amx     M= 6144 N= 6144 K= 6144  iters=3  t_avg=0.4243s  t_min=0.4240s  GFLOPS(avg)=1093.31  GFLOPS(best)=1094.03
+MKL sz=6144 : METHOD=mkl     M= 6144 N= 6144 K= 6144  iters=3  t_avg=0.4813s  t_min=0.4808s  GFLOPS(avg)=963.71  GFLOPS(best)=964.79
+AMX sz=8192 : METHOD=amx     M= 8192 N= 8192 K= 8192  iters=3  t_avg=1.3347s  t_min=1.3341s  GFLOPS(avg)=823.77  GFLOPS(best)=824.16
+MKL sz=8192 : METHOD=mkl     M= 8192 N= 8192 K= 8192  iters=3  t_avg=1.5683s  t_min=1.5670s  GFLOPS(avg)=701.08  GFLOPS(best)=701.67
+AMX sz=10000 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=1.9616s  t_min=1.9600s  GFLOPS(avg)=1019.57  GFLOPS(best)=1020.43
+MKL sz=10000 : METHOD=mkl     M=10000 N=10000 K=10000  iters=3  t_avg=1.8556s  t_min=1.8554s  GFLOPS(avg)=1077.82  GFLOPS(best)=1077.92
+===== Done 2026年  5月 26日 火曜日 10:16:25 JST =====

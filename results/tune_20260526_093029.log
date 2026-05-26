@@ -1,0 +1,5 @@
+===== Tuning 2026年  5月 26日 火曜日 09:30:29 JST =====
+host: a0090
+--- Scan KC at MC=128 NC=1024 ---
+MC=128 NC=1024 KC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.6880s  t_min=3.6753s  GFLOPS(avg)=542.29  GFLOPS(best)=544.18
+MC=128 NC=1024 KC=512 : 

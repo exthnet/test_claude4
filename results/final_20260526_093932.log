@@ -1,0 +1,33 @@
+===== Final benchmark 2026年  5月 26日 火曜日 09:39:32 JST =====
+host: a0156
+CPU MHz: cpu MHz		: 1900.000
+--- Correctness (1024x1024x1024) ---
+METHOD=amx     M= 1024 N= 1024 K= 1024  iters=3  t_avg=0.0027s  t_min=0.0026s  GFLOPS(avg)=800.16  GFLOPS(best)=815.67  rel_err=2.344e-07
+--- PFD compare (10000x10000, KC=512, MC=128, NC=1024) ---
+PFD=0 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.1286s  t_min=3.1251s  GFLOPS(avg)=639.25  GFLOPS(best)=639.97
+PFD=2 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.2172s  t_min=3.2134s  GFLOPS(avg)=621.66  GFLOPS(best)=622.39
+PFD=4 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.1954s  t_min=3.1927s  GFLOPS(avg)=625.91  GFLOPS(best)=626.42
+PFD=8 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.1580s  t_min=3.1540s  GFLOPS(avg)=633.31  GFLOPS(best)=634.12
+--- KC sweep PFD=0 (10000x10000, MC=128, NC=1024) ---
+KC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.7451s  t_min=3.7388s  GFLOPS(avg)=534.03  GFLOPS(best)=534.93
+KC=384 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.4648s  t_min=3.4611s  GFLOPS(avg)=577.23  GFLOPS(best)=577.85
+KC=512 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.1145s  t_min=3.1134s  GFLOPS(avg)=642.16  GFLOPS(best)=642.38
+KC=768 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.4562s  t_min=3.4521s  GFLOPS(avg)=578.67  GFLOPS(best)=579.36
+KC=1024 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.4145s  t_min=3.4137s  GFLOPS(avg)=585.73  GFLOPS(best)=585.88
+KC=2048 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.9267s  t_min=3.9039s  GFLOPS(avg)=509.33  GFLOPS(best)=512.31
+KC=4096 : METHOD=amx     M=10000 N=10000 K=10000  iters=5  t_avg=3.7077s  t_min=3.7032s  GFLOPS(avg)=539.42  GFLOPS(best)=540.08
+--- MC scan (KC=512, NC=1024, PFD=0) ---
+MC=32 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=2.3907s  t_min=2.3885s  GFLOPS(avg)=836.56  GFLOPS(best)=837.34
+MC=64 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=2.6145s  t_min=2.6024s  GFLOPS(avg)=764.96  GFLOPS(best)=768.53
+MC=96 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1146s  t_min=3.1122s  GFLOPS(avg)=642.13  GFLOPS(best)=642.64
+MC=128 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1118s  t_min=3.1097s  GFLOPS(avg)=642.71  GFLOPS(best)=643.15
+MC=192 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1341s  t_min=3.1309s  GFLOPS(avg)=638.14  GFLOPS(best)=638.80
+MC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1472s  t_min=3.1440s  GFLOPS(avg)=635.48  GFLOPS(best)=636.12
+--- NC scan (KC=512, MC=128, PFD=0) ---
+NC=256 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.2603s  t_min=3.2589s  GFLOPS(avg)=613.44  GFLOPS(best)=613.71
+NC=512 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=2.8367s  t_min=2.8274s  GFLOPS(avg)=705.04  GFLOPS(best)=707.35
+NC=1024 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.1462s  t_min=3.1431s  GFLOPS(avg)=635.69  GFLOPS(best)=636.32
+NC=2048 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.9919s  t_min=3.9910s  GFLOPS(avg)=501.01  GFLOPS(best)=501.13
+NC=5120 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.3973s  t_min=3.3672s  GFLOPS(avg)=588.70  GFLOPS(best)=593.96
+NC=10016 : METHOD=amx     M=10000 N=10000 K=10000  iters=3  t_avg=3.3628s  t_min=3.3564s  GFLOPS(avg)=594.73  GFLOPS(best)=595.88
+--- All methods @ 10000x10000x10000 ---

@@ -1,0 +1,13 @@
+# compiler artifacts
+build/
+*.o
+*.a
+*.so
+
+# the benchmark binary
+/bench
+
+# editor/OS junk
+*.swp
+*.swo
+.DS_Store
